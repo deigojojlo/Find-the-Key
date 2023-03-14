@@ -73,8 +73,6 @@ class Mine() :
                         self.essai = self.clavier1[0]+self.clavier1[1]+self.clavier1[2]
                         self.info = True
 
-
-
     def ready(self):
         self.fen.bind('<Return>',self.get_entry)
         self.start()
