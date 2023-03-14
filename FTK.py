@@ -5,8 +5,8 @@ class Mine() :
     def __init__(self) -> None:
         self.fen = Tk()
         self.fen.title("Find the key")
-        self.fen.geometry("720x500")
-        self.fen.minsize(1080,1900)
+        self.fen.geometry("1080x1900")
+        self.fen.minsize(720,520)
         self.fen.config(background="#D2D2D2")
         self.l1 = Frame(self.fen)
         self.l2 = Frame(self.fen)
@@ -15,7 +15,6 @@ class Mine() :
         self.clavier = [["a","z","e","r","t","y","u","i","o","p"], 
              ["q","s","d","f","g","h","j","k","l","m"],
              ["w","x","c","v","b","n"]]
-
         self.lfin = Label(self.fen , text = "", bg = '#D2D2D2')
         self.entry = Entry(self.fen,bd = 10, relief = FLAT)
         self.restart = Button(self.fen,text = "restart", bg = "#D2D2D2", width = 10)
